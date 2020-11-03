@@ -1,0 +1,1069 @@
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+SPECIAL             aliased_resized_area_with_default @3
+                                           start_index_in_bound:
+<000000007FFFD088>                         Runtime check violated.       Fail
+-------------------------------------------------------------------------------
+SPECIAL             aliased_resized_area_with_default @3
+<000000007FFFD088>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STRING_8            resize @2                                           
+<00000000077E26E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STRING_8            append @7                                           
+<00000000077E26E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           out @11                                             
+<00000000077E1FC8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_CMD_LINE_OUTPUT_HANDLER
+                    model_state @2         
+<00000000077E1ED8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @2
+<00000000077E1978>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000077E1978>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000077E1978>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000077E1978>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+SPECIAL             aliased_resized_area_with_default @3
+                                           start_index_in_bound:
+<000000007FFF7088>                         Runtime check violated.       Fail
+-------------------------------------------------------------------------------
+SPECIAL             aliased_resized_area_with_default @3
+<000000007FFF7088>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STRING_8            resize @2                                           
+<00000000077416E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STRING_8            append @7                                           
+<00000000077416E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           out @11                                             
+<0000000007740FC8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_CMD_LINE_OUTPUT_HANDLER
+                    model_state @2         
+<0000000007740ED8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @2
+<0000000007740978>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<0000000007740978>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<0000000007740978>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<0000000007740978>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+SPECIAL             aliased_resized_area_with_default @3
+                                           start_index_in_bound:
+<000000007FFF6088>                         Runtime check violated.       Fail
+-------------------------------------------------------------------------------
+SPECIAL             aliased_resized_area_with_default @3
+<000000007FFF6088>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STRING_8            resize @2                                           
+<00000000077FB6E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+STRING_8            append @7                                           
+<00000000077FB6E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           out @11                                             
+<00000000077FAFC8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_CMD_LINE_OUTPUT_HANDLER
+                    model_state @2         
+<00000000077FAED8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               put @3                 valid_index:                 
+<00000000064C6428>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           out @2                                              
+<00000000064C6098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_CMD_LINE_OUTPUT_HANDLER
+                    model_state @2         
+<00000000064C6068>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @2
+<00000000064C55A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000064C55A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000064C55A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000064C55A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               put @3                 valid_index:                 
+<0000000006433428>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           out @2                                              
+<0000000006433098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_CMD_LINE_OUTPUT_HANDLER
+                    model_state @2         
+<0000000006433068>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @2
+<00000000064325A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000064325A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000064325A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000064325A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<00000000065E9638>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           check_projectile @4                                 
+<00000000065E9098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           out @33                                             
+<00000000065E9098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_CMD_LINE_OUTPUT_HANDLER
+                    model_state @2         
+<000000000660D818>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @21
+<00000000065E85A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000065E85A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000065E85A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000065E85A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<000000000642E6D8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MOVE            move @24                                            
+<000000000645D488>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<000000000645D6E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<000000000645D6E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<000000000645D6E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<000000000645A2A8>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<000000000642E038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<000000000642D5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<000000000642D5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<000000000642D5A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<000000000642D5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<00000000063D7748>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_REDO            redo @3                                             
+<0000000006431C28>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<0000000006431E08>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<0000000006431E08>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<0000000006431E08>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<000000000642EF18>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<00000000063D7038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000063D65A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000063D65A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000063D65A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000063D65A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<0000000006547748>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_REDO            redo @3                                             
+<0000000006595E08>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<0000000006595FE8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<0000000006595FE8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<0000000006595FE8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<00000000065930F8>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<0000000006547038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000065465A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000065465A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000065465A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000065465A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<0000000006403748>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_REDO            redo @3                                             
+<000000000645DC38>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<000000000645DE18>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<000000000645DE18>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<000000000645DE18>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<000000000645AF28>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<0000000006403038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000064025A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000064025A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000064025A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000064025A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<00000000063FC748>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_REDO            redo @3                                             
+<000000000643DEA8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<000000000643E088>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<000000000643E088>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<000000000643E088>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<000000000643B198>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<00000000063FC038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000063FB5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000063FB5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000063FB5A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000063FB5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<0000000006392758>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_REDO            redo @3                                             
+<00000000064B8CF8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<00000000064B8ED8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<00000000064B8ED8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<00000000064B8ED8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<00000000064B5FE8>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<0000000006392038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000063915A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000063915A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000063915A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000063915A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<0000000006508758>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_REDO            redo @5                                             
+<000000000655ECD8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<000000000655EEB8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<000000000655EEB8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<000000000655EEB8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<000000000655BFC8>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<0000000006508038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000065075A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000065075A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000065075A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000065075A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<00000000063AF758>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_REDO            redo @5                                             
+<00000000064281C8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<00000000064283A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<00000000064283A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<00000000064283A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<00000000064254B8>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<00000000063AF038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000063AE5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000063AE5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000063AE5A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000063AE5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               clear_all @1           has_default:                 
+<00000000063CD758>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           delete_all_history @1                               
+<00000000063CD098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABORT           abort @2                                            
+<0000000006438768>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<0000000006438948>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<0000000006438948>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<0000000006438948>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<0000000006435E18>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<00000000063CD038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000063CC5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000063CC5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000063CC5A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000063CC5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               clear_all @1           has_default:                 
+<00000000063B0758>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_ABORT           abort @2                                            
+<000000000641B768>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<000000000641B948>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<000000000641B948>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<000000000641B948>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<0000000006418E18>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<00000000063B0038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000063AF5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000063AF5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000063AF5A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000063AF5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<000000000636A758>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_UNDO            undo @4                                             
+<0000000006433728>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<0000000006433908>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<0000000006433908>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<0000000006433908>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<0000000006430AD8>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<000000000636A038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000063695A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000063695A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000063695A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000063695A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<00000000063A8758>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_REDO            redo @5                                             
+<0000000006424658>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<0000000006424838>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<0000000006424838>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<0000000006424838>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<0000000006421948>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<00000000063A8038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000063A75A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000063A75A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000063A75A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000063A75A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               at @2                  valid_index:                 
+<00000000063B0888>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           out @9                                              
+<00000000063B0098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_CMD_LINE_OUTPUT_HANDLER
+                    model_state @2         
+<00000000063B0068>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @2
+<00000000063AF5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000063AF5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000063AF5A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000063AF5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               at @2                  valid_index:                 
+<0000000006455888>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           out @9                                              
+<0000000006455098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_CMD_LINE_OUTPUT_HANDLER
+                    model_state @2         
+<0000000006455068>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @2
+<00000000064545A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000064545A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000064545A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000064545A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               at @2                  valid_index:                 
+<0000000006523888>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           out @9                                              
+<0000000006523098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_CMD_LINE_OUTPUT_HANDLER
+                    model_state @2         
+<0000000006523068>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @2
+<00000000065225A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000065225A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000065225A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000065225A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               at @2                  valid_index:                 
+<000000000648A888>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           out @9                                              
+<000000000648A098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_CMD_LINE_OUTPUT_HANDLER
+                    model_state @2         
+<000000000648A068>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @2
+<00000000064895A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000064895A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000064895A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000064895A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               at @2                  valid_index:                 
+<000000000636C208>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           set_message @20                                     
+<000000000636C098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+MOVE                execute @2                                          
+<00000000063BC7E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_MOVE            move @33                                            
+<00000000063B7788>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<00000000063B79E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<00000000063B79E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<00000000063B79E8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<00000000063B45A8>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<000000000636C038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<000000000636B5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<000000000636B5A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<000000000636B5A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<000000000636B5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+space_defender_1: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               at @2                  valid_index:                 
+<000000000637A208>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+ETF_MODEL           set_message @23                                     
+<000000000637A098>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+MOVE                execute @2                                          
+<00000000063B33B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_MOVE            move @33                                            
+<00000000063AE358>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           fast_call                                           
+<00000000063AE5B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           call @3                                             
+<00000000063AE5B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+PROCEDURE           apply @2                                            
+<00000000063AE5B8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_ABSTRACT_UI     run_input_commands @2                               
+<00000000063AB178>  (From ETF_ABSTRACT_UI_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ETF_SOFTWARE_OPERATION
+                    execute_without_log @7 
+<000000000637A038>  (From ETF_SOFTWARE_OPERATION_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                handle_interactive_mode @20
+<00000000063795A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @21                                            
+<00000000063795A8>  (From ETF_CMD_LINE_ROOT_INTERFACE)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ROOT                make @16                                            
+<00000000063795A8>  (From ETF_ROOT_INTERFACE)
+                                           Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ROOT                root's creation                                     
+<00000000063795A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------

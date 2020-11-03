@@ -11,7 +11,7 @@ case "$O" in
 esac
 echo "Compiling C code in C20"
 $spitshell >Makefile <<!GROK!THIS!
-INCLUDE_PATH =  -I"\$(ISE_LIBRARY)/library/encoding/implementation/include" -I"\$(ISE_LIBRARY)/library/time/spec/include" -I"\$(ISE_LIBRARY)/library/vision2/spec/include" -I"\$(ISE_LIBRARY)/library/vision2/implementation/gtk/Clib" `$ISE_LIBRARY/library/encoding/implementation/unix/Clib/iconv-config --include_path` `$ISE_LIBRARY/library/vision2/implementation/gtk/Clib/vision2-gtk-config --include_path`
+INCLUDE_PATH =  -I"\$(ISE_LIBRARY)\library\wel\spec\windows\include" -I"\$(ISE_LIBRARY)\library\time\spec\include" -I"\$(ISE_LIBRARY)\library\vision2\spec\include" -I"\$(ISE_LIBRARY)\C_library\zlib"
 SHELL = /bin/sh
 CC = $cc
 CPP = $cpp
@@ -55,16 +55,16 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C20_c.o 
 
-OLDOBJECTS =  he1617.o he1617d.o tr1614.o tr1614d.o bi1616.o bi1616d.o bi1612.o \
-	bi1612d.o pr1611.o pr1611d.o pr1618.o pr1618d.o tr1613.o tr1613d.o \
-	li1615.o li1615d.o kl1595.o kl1595d.o kl1596.o kl1596d.o kl1600.o \
-	kl1600d.o kl1603.o kl1603d.o kl1607.o kl1607d.o kl1594.o kl1594d.o \
-	kl1599.o kl1599d.o kl1606.o kl1606d.o kl1610.o kl1610d.o kl1597.o \
-	kl1597d.o kl1601.o kl1601d.o kl1604.o kl1604d.o kl1608.o kl1608d.o \
-	ki1589.o ki1589d.o ki1590.o ki1590d.o kl1592.o kl1592d.o kl1598.o \
-	kl1598d.o kl1602.o kl1602d.o kl1605.o kl1605d.o kl1609.o kl1609d.o \
-	ev1586.o ev1586d.o ki1588.o ki1588d.o ki1591.o ki1591d.o kl1593.o \
-	kl1593d.o ki1587.o ki1587d.o 
+OLDOBJECTS =  et1614.o et1614d.o ev1599.o ev1599d.o ev1610.o ev1610d.o et1613.o \
+	et1613d.o ev1595.o ev1595d.o ev1600.o ev1600d.o ev1596.o ev1596d.o \
+	ev1598.o ev1598d.o ev1606.o ev1606d.o ev1605.o ev1605d.o ev1607.o \
+	ev1607d.o ev1604.o ev1604d.o ev1615.o ev1615d.o ev1612.o ev1612d.o \
+	ev1593.o ev1593d.o ev1587.o ev1587d.o ev1597.o ev1597d.o ev1603.o \
+	ev1603d.o ev1591.o ev1591d.o ev1592.o ev1592d.o ev1618.o ev1618d.o \
+	ev1590.o ev1590d.o ev1611.o ev1611d.o ev1594.o ev1594d.o ev1616.o \
+	ev1616d.o ev1601.o ev1601d.o ev1586.o ev1586d.o ev1617.o ev1617d.o \
+	ev1588.o ev1588d.o ev1609.o ev1609d.o ev1589.o ev1589d.o ev1602.o \
+	ev1602d.o ev1608.o ev1608d.o 
 
 all: Cobj20.o
 

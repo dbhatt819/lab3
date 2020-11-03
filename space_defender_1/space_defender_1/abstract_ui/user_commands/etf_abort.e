@@ -6,16 +6,23 @@ note
 
 class
 	ETF_ABORT
-inherit 
+inherit
 	ETF_ABORT_INTERFACE
 create
 	make
-feature -- command 
+feature -- command
 	abort
     	do
-			-- perform some update on the model state
-			model.default_update
-			etf_cmd_container.on_change.notify ([Current])
+	    	if model.is_game_started then
+
+				model.delete_all_history
+	    		model.abort
+
+	    	else
+				model.set_error ("Not in game.")
+
+	    	end
+	    	etf_cmd_container.on_change.notify ([Current])
     	end
 
 end

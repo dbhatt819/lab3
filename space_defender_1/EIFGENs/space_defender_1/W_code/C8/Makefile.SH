@@ -11,7 +11,7 @@ case "$O" in
 esac
 echo "Compiling C code in C8"
 $spitshell >Makefile <<!GROK!THIS!
-INCLUDE_PATH =  -I"\$(ISE_LIBRARY)/library/encoding/implementation/include" -I"\$(ISE_LIBRARY)/library/time/spec/include" -I"\$(ISE_LIBRARY)/library/vision2/spec/include" -I"\$(ISE_LIBRARY)/library/vision2/implementation/gtk/Clib" `$ISE_LIBRARY/library/encoding/implementation/unix/Clib/iconv-config --include_path` `$ISE_LIBRARY/library/vision2/implementation/gtk/Clib/vision2-gtk-config --include_path`
+INCLUDE_PATH =  -I"\$(ISE_LIBRARY)\library\wel\spec\windows\include" -I"\$(ISE_LIBRARY)\library\time\spec\include" -I"\$(ISE_LIBRARY)\library\vision2\spec\include" -I"\$(ISE_LIBRARY)\C_library\zlib"
 SHELL = /bin/sh
 CC = $cc
 CPP = $cpp
@@ -55,16 +55,16 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C8_c.o 
 
-OLDOBJECTS =  va1190.o va1190d.o ki1204.o ki1204d.o kl1205.o kl1205d.o ki1197.o \
-	ki1197d.o ev1211.o ev1211d.o ev1216.o ev1216d.o ki1202.o ki1202d.o \
-	ki1199.o ki1199d.o ki1198.o ki1198d.o kl1191.o kl1191d.o ev1214.o \
-	ev1214d.o ev1207.o ev1207d.o ev1212.o ev1212d.o kl1196.o kl1196d.o \
-	kl1195.o kl1195d.o kl1201.o kl1201d.o ev1210.o ev1210d.o ev1209.o \
-	ev1209d.o ki1203.o ki1203d.o ev1206.o ev1206d.o ev1208.o ev1208d.o \
-	uc1213.o uc1213d.o kl1215.o kl1215d.o uc1194.o uc1194d.o uc1193.o \
-	uc1193d.o uc1192.o uc1192d.o kl1200.o kl1200d.o ev1222.o ev1222d.o \
-	ev1221.o ev1221d.o ev1220.o ev1220d.o ev1219.o ev1219d.o ev1218.o \
-	ev1218d.o ev1217.o ev1217d.o 
+OLDOBJECTS =  ti1220.o ti1220d.o ti1219.o ti1219d.o da1221.o da1221d.o ti1218.o \
+	ti1218d.o ev1214.o ev1214d.o ti1217.o ti1217d.o co1216.o co1216d.o \
+	da1222.o da1222d.o ev1215.o ev1215d.o ev1213.o ev1213d.o ev1212.o \
+	ev1212d.o ev1211.o ev1211d.o ev1208.o ev1208d.o ki1191.o ki1191d.o \
+	ev1207.o ev1207d.o we1206.o we1206d.o we1205.o we1205d.o we1204.o \
+	we1204d.o we1203.o we1203d.o we1202.o we1202d.o we1201.o we1201d.o \
+	we1200.o we1200d.o ev1199.o ev1199d.o ev1197.o ev1197d.o we1196.o \
+	we1196d.o we1195.o we1195d.o we1194.o we1194d.o we1193.o we1193d.o \
+	ev1192.o ev1192d.o ki1190.o ki1190d.o ev1210.o ev1210d.o ev1209.o \
+	ev1209d.o rt1198.o rt1198d.o 
 
 all: Cobj8.o
 
