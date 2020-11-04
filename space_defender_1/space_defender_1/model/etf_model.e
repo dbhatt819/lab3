@@ -52,7 +52,6 @@ feature {NONE} -- Initialization
 			create command_name.make_empty
 			create player_move_starting_pos.default_create
 			new_window:= True
-			create state_in_string.make_empty
 
 		end
 
@@ -84,8 +83,8 @@ feature -- model attributes
 	message_array: ARRAY[STRING]
 	command_name: STRING
 	new_window: BOOLEAN
-	state: REAL
-	state_in_string: STRING
+	state_normal: INTEGER
+	state_error: INTEGER
 	--something not to touch
 	player_move_starting_pos: TUPLE[r: INTEGER; c: INTEGER]
 
@@ -124,9 +123,8 @@ feature -- model operations
 
 	play(r: INTEGER_32; c: INTEGER_32; s_move: INTEGER_32; p_move: INTEGER_32)
 		do
-				state:= state + 1
-				state:= state.floor_real_32
-				state_in_string:= convert_to_real(state)
+				state_normal:= state_normal + 1
+				state_error:= 0
 				is_game_started:= True
 				row := r
 				column:= c
@@ -143,9 +141,8 @@ feature -- model operations
 		do
 			reset
 			new_window:=False
-			state:= state + 1
-			state:= state.floor_real_32
-			state_in_string:= convert_to_real(state)
+			state_normal:= state_normal + 1
+			state_error:= 0
 		end
 	move(r: INTEGER_32; c: INTEGER_32)
 
@@ -161,11 +158,37 @@ feature -- model operations
 			col_mov:= c
 			player_move_starting_pos.r := player_move_row
 			player_move_starting_pos.c := player_move_col
-			state:= state + 1
-			state:= state.floor_real_32
-			state_in_string:= convert_to_real(state)
+			state_normal:= state_normal + 1
+			state_error:= 0
 			current_projectile_moves:= 0
 
+				--incremention of projectile positions first
+				from
+					m:= current_projectile_moves
+				until
+					m = projectile_max_moves
+				loop
+					from
+						x:= 1
+					until
+						x > projectile_pos.count
+					loop
+							projectile_pos.at(x).proj_col:= projectile_pos.at(x).proj_col + 1
+							x:= x+1
+					end
+					m:= m+ 1
+				end
+
+				--Increment once every turn for projectile
+				from
+					n:= 1
+				until
+					n > projectile_pos.count
+				loop
+						projectile_pos.at(n).times:= projectile_pos.at(n).times + 1
+						n:= n+1
+
+				end
 
 				--move vertical first
 				from
@@ -181,19 +204,6 @@ feature -- model operations
 
 						player_move_row:= player_move_row + 1
 
-					end
-
-					--Incremeting all projectile positions
-					if current_projectile_moves < projectile_max_moves then
-						from
-							x:= 1
-						until
-							x > projectile_pos.count
-						loop
-							projectile_pos.at(x).proj_col:= projectile_pos.at(x).proj_col + 1
-							x:= x + 1
-						end
-						current_projectile_moves:= current_projectile_moves + 1
 					end
 
 					--Checking for collision vertically
@@ -232,21 +242,6 @@ feature -- model operations
 
 						end
 
-						--Incrementing all projectile positions
-						if current_projectile_moves < projectile_max_moves then
-							from
-								x:= 1
-							until
-								x > projectile_pos.count
-							loop
-								projectile_pos.at(x).proj_col:= projectile_pos.at(x).proj_col + 1
-								x:= x+1
-
-							end
-
-							current_projectile_moves:= current_projectile_moves + 1
-						end
-
 						--Checking for collision Horizontally
 						from
 							x:= 1
@@ -268,33 +263,6 @@ feature -- model operations
 
 				projectile_pos.prune(element_removed)
 
-				--Finishing rest of the incremention of projectile positions
-				from
-					m:= current_projectile_moves
-				until
-					m = projectile_max_moves
-				loop
-					from
-						x:= 1
-					until
-						x > projectile_pos.count
-					loop
-							projectile_pos.at(x).proj_col:= projectile_pos.at(x).proj_col + 1
-							x:= x+1
-					end
-					m:= m+ 1
-				end
-
-				--Increment once every turn for projectile
-				from
-					n:= 1
-				until
-					n > projectile_pos.count
-				loop
-						projectile_pos.at(n).times:= projectile_pos.at(n).times + 1
-						n:= n+1
-
-				end
 		end
 
 	fire
@@ -304,9 +272,8 @@ feature -- model operations
 			n: INTEGER
 			j: INTEGER
 		do
-			state:= state + 1
-			state:= state.floor_real_32
-			state_in_string:= convert_to_real(state)
+			state_normal:= state_normal + 1
+			state_error:= 0
 			from
 				m:= 0
 			until
@@ -357,10 +324,6 @@ feature -- model operations
 			if not is_player_dead then
 				projectile_pos.extend([player_move_row, player_move_col+1, 1])
 			end
-
-
-
-
 		end
 
 	pass
@@ -370,9 +333,8 @@ feature -- model operations
 			n: INTEGER
 			j: INTEGER
 		do
-			state:= state + 1
-			state:= state.floor_real_32
-			state_in_string:= convert_to_real(state)
+			state_normal:= state_normal + 1
+			state_error:= 0
 			from
 				m:= 0
 			until
@@ -431,70 +393,10 @@ feature -- model operations
 		do
 			row_mov:= r
 			col_mov:= c
-			state:= state - 1
-			state_in_string:= convert_to_real(state)
-			current_projectile_moves:= 0
-			--move vertical first
-				from
-					player_move_row:= player_move_row
-				until
-					player_move_row = row_mov
-				loop
-					if r < player_move_row then
+			state_normal:= state_normal - 1
+			state_error:= 0
 
-						player_move_row:= player_move_row - 1
-
-					elseif r > player_move_row then
-
-						player_move_row:= player_move_row + 1
-
-					end
-
-					--Decrementing all projectile positions
-					if current_projectile_moves < projectile_max_moves then
-						from
-							x:= 1
-						until
-							x > projectile_pos.count
-						loop
-							projectile_pos.at(x).proj_col:= projectile_pos.at(x).proj_col - 1
-							x:= x + 1
-						end
-						current_projectile_moves:= current_projectile_moves + 1
-					end
-				end
-				--move horizontal second
-				from
-					player_move_col:= player_move_col
-				until
-					player_move_col = col_mov
-
-				loop
-					if c < player_move_col then
-						player_move_col:= player_move_col - 1
-
-					elseif c > player_move_col then
-						player_move_col:= player_move_col + 1
-
-					end
-
-					--Decrementing all projectile positions
-					if current_projectile_moves < projectile_max_moves then
-						from
-							x:= 1
-						until
-							x > projectile_pos.count
-						loop
-							projectile_pos.at(x).proj_col:= projectile_pos.at(x).proj_col - 1
-							x:= x+1
-
-						end
-
-						current_projectile_moves:= current_projectile_moves + 1
-					end
-				end
-
-				--Finishing rest of the incremention of projectile positions
+			--incremention of projectile positions first
 				from
 					m:= current_projectile_moves
 				until
@@ -527,6 +429,40 @@ feature -- model operations
 					n:= n+1
 
 				end
+
+			--move vertical first
+				from
+					player_move_row:= player_move_row
+				until
+					player_move_row = row_mov
+				loop
+					if r < player_move_row then
+
+						player_move_row:= player_move_row - 1
+
+					elseif r > player_move_row then
+
+						player_move_row:= player_move_row + 1
+
+					end
+				end
+				--move horizontal second
+				from
+					player_move_col:= player_move_col
+				until
+					player_move_col = col_mov
+
+				loop
+					if c < player_move_col then
+						player_move_col:= player_move_col - 1
+
+					elseif c > player_move_col then
+						player_move_col:= player_move_col + 1
+
+					end
+				end
+
+
 		end
 
 	undo
@@ -535,9 +471,8 @@ feature -- model operations
 			x: INTEGER
 			n: INTEGER
 		do
-			state:= state - 1
-			state:= state.floor_real_32
-			state_in_string:= convert_to_real(state)
+			state_normal:= state_normal - 1
+			state_error:= 0
 			from
 				m:= 0
 			until
@@ -589,8 +524,7 @@ feature -- model operations
 
 	set_error(e: STRING)
 		do
-			state:= state + 0.1
-			state_in_string:= convert_to_real(state)
+			state_error:= state_error + 1
 			is_error:= True
 			error:= e
 		end
@@ -641,16 +575,6 @@ feature -- model operations
 
 			end
 
-		end
-
-	convert_to_real(n: REAL): STRING
-		local
-			f: FORMAT_DOUBLE
-
-
-		do
-			create f.make(3,1)
-			Result:= f.formatted (n.to_double)
 		end
 
 	reset
@@ -733,7 +657,7 @@ feature -- queries
 				new_window:= False
 			elseif is_error then
 				Result.append("state:")
-				Result.append(state_in_string)
+				Result.append(state_normal.out + "." + state_error.out)
 				Result.append(", error")
 				Result.append ("%N")
 				Result.append (error)
@@ -741,7 +665,7 @@ feature -- queries
 				error:= ""
 			elseif is_game_started then
 				Result.append("state:")
-				Result.append(state_in_string)
+				Result.append(state_normal.out + "." + state_error.out)
 				Result.append(", ok")
 				Result.append ("%N")
 
@@ -814,7 +738,7 @@ feature -- queries
 
 			elseif not is_game_started then
 				Result.append("state:")
-				Result.append(state_in_string)
+				Result.append(state_normal.out + "." + state_error.out)
 				Result.append(", ok")
 				Result.append ("%N")
 				Result.append ("Game has been exited.")
