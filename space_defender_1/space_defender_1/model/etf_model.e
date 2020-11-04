@@ -537,10 +537,12 @@ feature -- model operations
 			if command_name ~ "pass" then
 				projectile_message
 				if player_move_row = element_removed.r and player_move_col = element_removed.c then
+					message.append ("  ")
 					message.append ("A projectile moves and collides with the Starfighter: [" + arr.at (element_removed.r).out + "," + (element_removed.c - projectile_max_moves).out + "] -> [")
 					message.append (arr.at (player_move_row).out + "," + player_move_col.out + "]")
 					message.append ("%N")
 				else
+					message.append ("  ")
 					message.append ("The Starfighter stays at: [" + arr.at (player_move_row).out + "," + player_move_col.out + "]")
 					message.append ("%N")
 				end
@@ -550,11 +552,13 @@ feature -- model operations
 
 				projectile_message
 				if player_move_row = element_removed.r and player_move_col = element_removed.c then
+					message.append ("  ")
 					message.append ("A projectile moves and collides with the Starfighter: [" + arr.at (element_removed.r).out + "," + (element_removed.c - projectile_max_moves).out + "] -> [")
 					message.append (arr.at (player_move_row).out + "," + player_move_col.out + "]")
 					message.append ("%N")
 				else
-					message.append ("The Starfighter fires a projectile at: [" + arr.at (player_move_row).out + "," + (player_move_col+1).out + "]")
+					message.append ("  ")
+					message.append ("The Starfighter fires a projectile at: [" + arr.at (player_move_row).out + "," + (player_move_col).out + "]")
 					message.append ("%N")
 				end
 				message_array.force(message, message_array.count+1)
@@ -562,10 +566,12 @@ feature -- model operations
 			elseif command_name ~ "move" then
 				projectile_message
 				if player_move_row = element_removed.r and player_move_col = element_removed.c then
+					message.append ("  ")
 					message.append ("The Starfighter moves and collides with a projectile: [" + arr.at (player_move_starting_pos.r).out + "," + (player_move_starting_pos.c).out + "] -> [")
 					message.append (arr.at (player_move_row).out + "," + player_move_col.out + "]")
 					message.append ("%N")
 				else
+					message.append ("  ")
 					message.append ("The Starfighter moves: [" + arr.at (player_move_starting_pos.r).out + "," + (player_move_starting_pos.c).out + "] -> [")
 					message.append (arr.at (player_move_row).out + "," + player_move_col.out + "]")
 					message.append ("%N")
@@ -615,11 +621,12 @@ feature --extra
 					if command_name ~ "fire" then
 						if player_move_col + 1 /= projectile_pos.at(x).proj_col then
 							if projectile_pos.at (x).proj_col > column and (projectile_pos.at (x).proj_col - projectile_max_moves) <= column then
+								message.append ("  ")
 								message.append ("A projectile moves: [" + arr.at (projectile_pos.at (x).proj_row).out)
 								message.append("," + (projectile_pos.at (x).proj_col - projectile_max_moves).out + "] -> out of the board")
 								message.append ("%N")
 							elseif projectile_pos.at (x).proj_col <= column and (projectile_pos.at (x).proj_col - projectile_max_moves) <= column then
-
+								message.append ("  ")
 								message.append ("A projectile moves: [" + arr.at (projectile_pos.at (x).proj_row).out)
 								message.append("," + (projectile_pos.at (x).proj_col - projectile_max_moves).out + "] -> [")
 								message.append (arr.at (projectile_pos.at (x).proj_row).out + ",")
@@ -629,11 +636,12 @@ feature --extra
 						end
 					else
 						if projectile_pos.at (x).proj_col > column and (projectile_pos.at (x).proj_col - projectile_max_moves) <= column then
+								message.append ("  ")
 								message.append ("A projectile moves: [" + arr.at (projectile_pos.at (x).proj_row).out)
 								message.append("," + (projectile_pos.at (x).proj_col - projectile_max_moves).out + "] -> out of the board")
 								message.append ("%N")
 						elseif projectile_pos.at (x).proj_col <= column and (projectile_pos.at (x).proj_col - projectile_max_moves) <= column then
-
+							message.append ("  ")
 							message.append ("A projectile moves: [" + arr.at (projectile_pos.at (x).proj_row).out)
 							message.append("," + (projectile_pos.at (x).proj_col - projectile_max_moves).out + "] -> [")
 							message.append (arr.at (projectile_pos.at (x).proj_row).out + ",")
@@ -656,6 +664,7 @@ feature -- queries
 				Result.append("Welcome to Space Defender Version 1.")
 				new_window:= False
 			elseif is_error then
+				Result.append ("  ")
 				Result.append("state:")
 				Result.append(state_normal.out + "." + state_error.out)
 				Result.append(", error")
@@ -664,6 +673,7 @@ feature -- queries
 				is_error:= False
 				error:= ""
 			elseif is_game_started then
+				Result.append ("  ")
 				Result.append("state:")
 				Result.append(state_normal.out + "." + state_error.out)
 				Result.append(", ok")
@@ -685,9 +695,12 @@ feature -- queries
 					1 |..| column is col
 				loop
 					Result.append (col.out)
-					Result.append (" ")
+					if col < column then
+						Result.append (" ")
+					end
 
-					if col<=9 then
+
+					if col<9 then
 						Result.append(" ")
 					end
 				end
@@ -731,16 +744,19 @@ feature -- queries
 				end
 				if is_player_dead then
 					Result.append("%N")
+					Result.append ("  ")
 					Result.append ("The game is over. Better luck next time!")
 					is_game_started:= False
 				end
 
 
 			elseif not is_game_started then
+				Result.append ("  ")
 				Result.append("state:")
 				Result.append(state_normal.out + "." + state_error.out)
 				Result.append(", ok")
 				Result.append ("%N")
+				Result.append ("  ")
 				Result.append ("Game has been exited.")
 
 			end
