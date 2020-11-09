@@ -15,7 +15,7 @@ feature -- command
     	do
 
 			if model.is_game_started then
-				if model.cursor_position = model.history.count then
+				if model.cursor_position >= model.history.count then
 					model.set_error ("Nothing left to redo.")
 				else
 					model.increment_cursor

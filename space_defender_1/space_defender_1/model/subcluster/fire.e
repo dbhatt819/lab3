@@ -12,13 +12,13 @@ inherit COMMAND
 create
 	make
 feature
-	model: ETF_MODEL
+	model: ETF_SD_MAIN_MODEL
 feature
 	make
 	local
-		model_excess: ETF_MODEL_ACCESS
+		model_access: ETF_SD_MAIN_MODEL_ACCESS
 	do
-		model:= model_excess.m
+		model:= model_access.m
 	end
 feature
 	execute

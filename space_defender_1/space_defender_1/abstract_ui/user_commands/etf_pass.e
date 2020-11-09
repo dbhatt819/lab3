@@ -13,11 +13,12 @@ create
 feature -- command
 	pass
     	do
-    		if model.cursor_position >= 0 and model.cursor_position < model.history.count then
+
+    		if model.is_game_started then
+    			if model.cursor_position >= 0 and model.cursor_position < model.history.count then
 				model.reset_history
 				model.reset_message
-    		end
-    		if model.is_game_started then
+    			end
 				model.add_command(create {PASS}.make)
 				model.history[model.cursor_position].execute
 

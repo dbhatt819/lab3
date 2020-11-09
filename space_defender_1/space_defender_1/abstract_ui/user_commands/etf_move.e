@@ -45,17 +45,19 @@ feature -- command
 				rows:=10
 			end
 
-			if model.cursor_position >= 0 and model.cursor_position < model.history.count then
-				model.reset_history
-				model.reset_message
-			end
+
 
 			if model.is_game_started then
-				if rows > 10 or rows < 0 or column < model.column then
+				if rows > 10 or rows < 0 or column <= model.column then
 					if check_max_moves then
 						if model.player_move_col /= column or model.player_move_row /= rows then
+							if model.cursor_position >= 0 and model.cursor_position < model.history.count then
+								model.reset_history
+								model.reset_message
+							end
 							model.add_command(create {MOVE}.make(rows,column))
 							model.history[model.cursor_position].execute
+
 
 						else
 							model.set_error ("The Starfighter is already at that location.")

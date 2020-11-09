@@ -14,7 +14,7 @@ create
 feature
 	row: INTEGER_32
 	col: INTEGER_32
-	model: ETF_MODEL
+	model: ETF_SD_MAIN_MODEL
 	diff_row: INTEGER_32
 	diff_col: INTEGER_32
 	is_undo:BOOLEAN
@@ -25,10 +25,10 @@ feature
 
 	make(r: INTEGER_32; c: INTEGER_32)
 		local
-			model_excess: ETF_MODEL_ACCESS
+			model_access: ETF_SD_MAIN_MODEL_ACCESS
 
 		do
-			model:= model_excess.m
+			model:= model_access.m
 			row:= r
 			col:= c
 
